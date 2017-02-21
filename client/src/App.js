@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/api')
+    fetch('/api/v1/home')
       .then(response => {
         if (!response.ok) {
           throw new Error(`status ${response.status}`);
