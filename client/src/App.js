@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import FacebookAuth from './auth/FacebookAuth';
+// import LookupStocks from './LookupStock/LookupStock';
 import './App.css';
 
 class App extends Component {
@@ -34,22 +35,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          {'This is '}
-          <a href="https://github.com/mars/heroku-cra-node">
-            {'create-react-app with a custom Node/Express server'}
-          </a><br/>
-        </p>
+      <div className="ui container">
         <p className="App-intro">
           {this.state.fetching
             ? 'Fetching message from API'
             : this.state.message}
         </p>
+        <FacebookAuth />
       </div>
     );
   }

@@ -3,13 +3,81 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 
-    <title>Show me the money</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.css">
+
+    <title>Show Me the Money</title>
   </head>
   <body>
     <div id="root"></div>
 
+    <!-- <script> -->
+      <!-- window.fbAsyncInit = function() { -->
+        <!-- FB.init({ -->
+          <!-- appId      : '101355470384687', -->
+          <!-- cookie     : true, -->
+          <!-- xfbml      : true, -->
+          <!-- version    : 'v2.8' -->
+        <!-- }); -->
 
+        <!-- FB.getLoginStatus(function(response) { -->
+          <!-- statusChangeCallback(response); -->
+        <!-- }); -->
+      <!-- }; -->
+
+      <!-- function statusChangeCallback(response) { -->
+        <!-- console.log('statusChangeCallback'); -->
+        <!-- console.log(response); -->
+
+        <!-- if (response.status === 'connected') { -->
+          <!-- testAPI(); -->
+        <!-- } else if (response.status === 'not_authorized') { -->
+          <!-- document.getElementById('status').innerHTML = 'Please log ' + -->
+            <!-- 'into this app.'; -->
+        <!-- } else { -->
+          <!-- document.getElementById('status').innerHTML = 'Please log ' + -->
+            <!-- 'into Facebook.'; -->
+        <!-- } -->
+      <!-- } -->
+
+      <!-- function checkLoginState() { -->
+        <!-- console.log('swagswag check login state'); -->
+
+        <!-- FB.getLoginStatus(function(response) { -->
+          <!-- statusChangeCallback(response); -->
+        <!-- }); -->
+      <!-- } -->
+
+
+      <!-- (function(d, s, id) { -->
+        <!-- var js, fjs = d.getElementsByTagName(s)[0]; -->
+        <!-- if (d.getElementById(id)) return; -->
+        <!-- js = d.createElement(s); js.id = id; -->
+        <!-- js.src = "//connect.facebook.net/en_US/sdk.js"; -->
+        <!-- fjs.parentNode.insertBefore(js, fjs); -->
+      <!-- }(document, 'script', 'facebook-jssdk')); -->
+
+      <!-- function testAPI() { -->
+        <!-- console.log('Welcome!  Fetching your information.... '); -->
+        <!-- FB.api('/me', function(response) { -->
+          <!-- console.log('Successful login for: ' + response.name); -->
+          <!-- document.getElementById('status').innerHTML = -->
+            <!-- 'Thanks for logging in, ' + response.name + '!'; -->
+        <!-- }); -->
+      <!-- } -->
+    <!-- </script> -->
+
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> -->
+    <!-- </fb:login-button> -->
+
+    <!-- <fb:login-button autologoutlink="true"></fb:login-button> -->
+
+    <!-- <div id="status"></div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.8/semantic.min.js"></script>
   </body>
 </html>
